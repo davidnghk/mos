@@ -20,11 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 zh:
-  brand: "好柯打"
+  brand: "柯打到"
   company: "LetsApp Limited"
   our_services: "雲端訂單管理系統"
   
-  app_title: "好柯打系統"
+  app_title: "柯打到系統"
   app_desc: "第壹冷凍工程有限公司成立於1987年。超過25年度的實際經驗，我們專營商業,超市及飲食業之冷凍, 空調系統, 並提供專業設計，安裝，及保養維修服務。我們利用最新的技術和廣泛豐富經驗，使我們提升整體競爭優勢。我們訓練有素的安裝人員和資深技術服務團隊，給我們的客戶提供完整的服務。"
   was_refunded: "已被退還"
   will_be_refunded: "將會被退還"

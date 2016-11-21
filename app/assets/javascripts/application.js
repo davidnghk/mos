@@ -30,3 +30,5 @@ jQuery(function($) {
     });
 });
 
+//= require serviceworker-companion
+const applicationServerPublicKey = 'BF33DskY63NZH1NIhcCPzbnA_xBTkCfk119TzT3JBhPTbcY20jlqeRUmCo1Whd7FGHk9ju5nNzITtHOV24P8CVQ';
