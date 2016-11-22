@@ -31,4 +31,29 @@ jQuery(function($) {
 });
 
 //= require serviceworker-companion
-const applicationServerPublicKey = 'BF33DskY63NZH1NIhcCPzbnA_xBTkCfk119TzT3JBhPTbcY20jlqeRUmCo1Whd7FGHk9ju5nNzITtHOV24P8CVQ';
+
+var config = {
+    apiKey: "AIzaSyCoR14jc7u51KRrreq5svaSPJ_GifefRJA",
+    authDomain: "first-ref.firebaseapp.com",
+    databaseURL: "https://first-ref.firebaseio.com",
+    storageBucket: "first-ref.appspot.com",
+    messagingSenderId: "334655023105"
+  };
+  firebase.initializeApp(config);
+
+const messaging = firebase.messaging();
+messaging.requestPermission()
+.then(function() {
+  console.log('Have permission');
+  return messaging.getToken(); 
+})
+.then(function(token) {
+    console.log(token);
+})
+.catch(function(err) {
+  console.log('Error Occured.');
+})
+
+messaging.onMessage(function(payload) {
+    console.log('onMessage: ', payload); 
+})
