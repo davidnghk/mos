@@ -5,5 +5,5 @@ CarrierWave.configure do |config|
     google_storage_access_key_id:     'GOOGJE77MZCFLA2G6CQK',
     google_storage_secret_access_key: 'fdD4IfxPNo7kgD8/zvpEhEYJU2DN1uFHMVr2PiCN'
   }
-  config.fog_directory = 'mos-iamges'
+  config.fog_directory = 'mos-images'
 end

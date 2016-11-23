@@ -35,7 +35,7 @@ jQuery(function($) {
 var config = {
     apiKey: "AIzaSyCoR14jc7u51KRrreq5svaSPJ_GifefRJA",
     authDomain: "first-ref.firebaseapp.com",
-    databaseURL: "https://first-ref.firebaseio.com",
+    databaseURL: "https://first-ref.firebaseio.com", 
     storageBucket: "first-ref.appspot.com",
     messagingSenderId: "334655023105"
   };
@@ -51,7 +51,7 @@ messaging.requestPermission()
     console.log(token);
 })
 .catch(function(err) {
-  console.log('Error Occured.');
+  console.log(err);
 })
 
 messaging.onMessage(function(payload) {
